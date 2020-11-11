@@ -176,3 +176,31 @@ kirill@kirill-VirtualBox:~$  find -name "*.txt"
 ./Templates/Text File.txt
 
 ```
+
+# 3 часть, уровень Expert
+
+Более умная обработка файлов: wc, awk, sed
+Полезно почитать: man hier (от слова hierarchy, иерархия)
+Текстовый редактор для простых смертных: mcedit
+
+
+
+## 1. Найти количество упоминаний слова “Friday” в большом текстовом файле.
+
+```console
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ cd crusoe/
+kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ ls
+crusoe.txt
+kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ grep -o 'Friday' crusoe.txt | wc -l
+188
+
+```
+
+## 2. Заменить в текстовом файле все слова “Friday” на “Saturday”
+
+```console
+kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ sed -i 's/Friday/Saturday/g' crusoe.txt
+kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ grep -o 'Saturday' crusoe.txt | wc -l
+188
+
+```
