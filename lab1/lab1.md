@@ -204,3 +204,22 @@ kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ grep -o 'Saturday' crusoe.txt |
 188
 
 ```
+## 3. Свободное задание на арифметические действия с данными из файла с помощью awk. 
+
+Подсчитать сумму чисел по столбцам 
+
+Дан входной файл, где на каждой строке находятся два целых числа, разделенных пробелом. Надо посчитать сумму чисел в первом столбце и во втором. Вывести результат на экран.
+
+```console
+kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ mcedit file
+
+kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ cat file
+1 2
+2 2
+3 7
+kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ awk '{ sum1 += $1 } {sum2 += $2} END { print sum1 " " sum2}' file
+6 11
+
+
+
+```
