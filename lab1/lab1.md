@@ -194,6 +194,8 @@ crusoe.txt
 kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ grep -o 'Friday' crusoe.txt | wc -l
 188
 
+kirill@kirill-Lenovo-ideapad-330-15AST:~/crusoe$ grep -i -c "friday" crusoe.txt
+188
 ```
 
 ## 2. Заменить в текстовом файле все слова “Friday” на “Saturday”
