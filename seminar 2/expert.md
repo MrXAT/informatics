@@ -28,10 +28,33 @@ kirill@kirill-Lenovo-ideapad-330-15AST:~$ ls -la shared.txt
 ```
 
 
+
 ## 3. С помощью команды chown сделайте вашего соседа справа владельцем файла shared.txt, затем верните соседу слева полученный от него файл.
 
 
 ```console
 Не получится. Мой сосед справа уехал в Тыву :-)
+
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ chown right-hand-man ./shared.txt 
 ```
+
+## 4. Проделайте те же операции, что и в п.1-3, но с директорией
+
+
+```console
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ ls -la another_dir/
+итого 8
+drwxrwxr-x  2 kirill kirill 4096 дек 15 19:28 .
+drwxr-xr-x 30 kirill kirill 4096 дек 15 19:49 ..
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ chmod ugo-rwx another_dir/
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ chmod u+r another_dir/
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ ls -la another_dir/
+ls: невозможно получить доступ к 'another_dir/.': Отказано в доступе
+ls: невозможно получить доступ к 'another_dir/..': Отказано в доступе
+итого 0
+d????????? ? ? ? ?            ? .
+d????????? ? ? ? ?            ? ..
+
+```
+
 
