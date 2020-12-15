@@ -50,3 +50,11 @@ kirill@kirill-Lenovo-ideapad-330-15AST:~$ cd another_dir/
 kirill@kirill-Lenovo-ideapad-330-15AST:~/another_dir$ /home/kirill/223/main
 Hello World! 
 ```
+
+## 4. Добавьте директорию, в которой лежит программа из п.3 в $PATH (export PATH=$PATH:<новая директория>). 
+
+```console
+kirill@kirill-Lenovo-ideapad-330-15AST:~/223$ export PATH=$PATH:/home/kirill/223
+kirill@kirill-Lenovo-ideapad-330-15AST:~/223$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kirill/new_dir::/home/kkirill/223
+```
