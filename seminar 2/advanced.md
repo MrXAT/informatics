@@ -35,6 +35,14 @@ kirill@kirill-Lenovo-ideapad-330-15AST:~/another_dir$ echo $PATH
 
 ```console
 kirill@kirill-Lenovo-ideapad-330-15AST:~$ cd 223/
+kirill@kirill-Lenovo-ideapad-330-15AST:~/223$ cat main.c
+#include <stdio.h>
+
+int main() {
+    printf("Hello World! \n");
+
+    return 0;
+
 kirill@kirill-Lenovo-ideapad-330-15AST:~/223$ ./main 
 Hello World! 
 kirill@kirill-Lenovo-ideapad-330-15AST:~/223$ cd
