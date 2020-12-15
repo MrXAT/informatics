@@ -74,4 +74,22 @@ yandex.ru.		175	IN	A	5.255.255.55
 yandex.ru.		175	IN	A	77.88.55.60
 yandex.ru.		175	IN	A	77.88.55.55
 yandex.ru.		175	IN	A	5.255.255.60
+
+или
+
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ nslookup yandex.ru
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	yandex.ru
+Address: 5.255.255.60
+Name:	yandex.ru
+Address: 77.88.55.55
+Name:	yandex.ru
+Address: 77.88.55.60
+Name:	yandex.ru
+Address: 5.255.255.55
+Name:	yandex.ru
+Address: 2a02:6b8:a::a
 ```
