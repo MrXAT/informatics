@@ -65,3 +65,13 @@ traceroute to google.com (64.233.164.100), 30 hops max, 60 byte packets
 22  * lf-in-f100.1e100.net (64.233.164.100)  55.663 ms *
 
 ```
+## 2. Какой IP-адрес у сервера yandex.ru? Какой командой вы это определили и почему решили использовать именно ее?
+
+
+```console
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ dig +noall +answer yandex.ru
+yandex.ru.		175	IN	A	5.255.255.55
+yandex.ru.		175	IN	A	77.88.55.60
+yandex.ru.		175	IN	A	77.88.55.55
+yandex.ru.		175	IN	A	5.255.255.60
+```
