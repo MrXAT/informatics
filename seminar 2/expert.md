@@ -12,3 +12,19 @@ kirill@kirill-Lenovo-ideapad-330-15AST:~$ touch shared.txt
 kirill@kirill-Lenovo-ideapad-330-15AST:~$ ls -la shared.txt 
 -rw-rw-r-- 1 kirill kirill 0 дек 15 19:49 shared.txt
 ```
+
+## 2. C помощью команды chmod сделайте так, чтобы созданный файл был доступен только его владельцу и только на чтение.
+
+
+```console
+    Забираю все права у всех пользователей
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ chmod ugo-rwx shared.txt 
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ ls -la shared.txt 
+---------- 1 kirill kirill 0 дек 15 19:49 shared.txt
+    Даю право на чтение владельцу
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ chmod u+r shared.txt 
+kirill@kirill-Lenovo-ideapad-330-15AST:~$ ls -la shared.txt 
+-r-------- 1 kirill kirill 0 дек 15 19:49 shared.txt
+```
+
+
